@@ -5,7 +5,7 @@ import Alert from "./Alert";
 import { useContext, useState } from "react";
 import UserContext from "./Context";
 
-export default Login = () => {
+export default function Login() {
   const navigate = useNavigate();
   const [alert, setAlert] = useState(null);
   const { setUser } = useContext(UserContext);

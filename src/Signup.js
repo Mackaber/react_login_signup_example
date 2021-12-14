@@ -11,7 +11,7 @@ const NameSchema = yup.object().shape({
   first_name: yup.string().required()
 });
 
-export default SignUp = () => {
+export default function SignUp() {
   const [alert, setAlert] = useState(null);
 
   const {

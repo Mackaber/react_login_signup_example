@@ -7,7 +7,7 @@ import App from "./App";
 import Welcome from "./Welcome";
 import UserContext from "./Context";
 
-export default AppRoutes = () => {
+export default function AppRoutes() {
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
   return (
     // Pasar el state "user" a el context "UserContext" para que pueda ser usado

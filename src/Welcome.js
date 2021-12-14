@@ -2,7 +2,7 @@ import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import UserContext from "./Context";
 
-export default Welcome = () => {
+export default function Welcome() {
   const { user } = useContext(UserContext);
   const [name, setName] = useState("");
 
